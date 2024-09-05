@@ -5,7 +5,7 @@ import Intro from "./components/Intro";
 const App = () => {
   return (
     <main>
-      <div className="card">
+      <section className="card">
         <div className="img">
           <Avatar pic="mypic.jpg" />
         </div>
@@ -26,7 +26,7 @@ const App = () => {
         <div className="skills">
           <Skills />
         </div>
-      </div>
+      </section>
     </main>
   );
 };
