@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Date from './Date'
 
 const message = [
   "Learn React",
@@ -28,6 +29,7 @@ const App = () => {
             <button style={{backgroundColor : '#7950f2', color: '#fff'}} onClick={() => step < 3 ? setStep((prevState) => prevState + 1) : ''}>Next</button>
           </div>
         </div>)} 
+        <Date />
     </> 
   )
 }
