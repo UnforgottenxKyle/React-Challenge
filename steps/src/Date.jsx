@@ -1,9 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 
+
+
 const Date = () => {
+    const newDate = new Date()
     const [isOpen, setIsOpen] = useState(true)
-    const [date, setDate] = useState(new Date())
+    const [count, setCount] = useState(0)
+    newDate.setDate(newDate.getDate() + count)
   return (
     <>
     <button className="close" onClick={()=>setIsOpen((prevState) => !prevState)}>&times;</button>
@@ -13,7 +17,7 @@ const Date = () => {
         <button style={{backgroundColor : '#7950f2', color: '#fff'}}>Next</button>
       </div>
 
-      <p className='message'>date</p>
+      <p className='message'></p>
 
       <div className="buttons">
         <button style={{backgroundColor : '#7950f2', color: '#fff'}}>Previous</button>
